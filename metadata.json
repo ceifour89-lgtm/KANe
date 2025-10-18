@@ -1,0 +1,5 @@
+{
+  "name": "KANE Music",
+  "description": "A sleek and user-friendly React application that allows you to upload an audio file from your local machine and play it directly in the browser. The audio is processed locally for privacy and is not uploaded to any server.",
+  "requestFramePermissions": []
+}
