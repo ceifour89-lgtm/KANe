@@ -5,10 +5,10 @@ import { SettingsPage } from './components/SettingsPage';
 import { Footer } from './components/Footer';
 import { useAuth } from './contexts/AuthContext';
 import AuthPage from './components/AuthPage';
-import { EditProfilePage } from './components/EditProfilePage';
 import { InviteFriendsPage } from './components/InviteFriendsPage';
+import { SupportPage } from './components/SupportPage';
 
-export type Page = 'home' | 'settings' | 'editProfile' | 'inviteFriends';
+export type Page = 'home' | 'settings' | 'inviteFriends' | 'support';
 
 const App: React.FC = () => {
   const { user } = useAuth();
@@ -77,10 +77,10 @@ const App: React.FC = () => {
     switch (page) {
       case 'settings':
         return <SettingsPage />;
-      case 'editProfile':
-        return <EditProfilePage />;
       case 'inviteFriends':
         return <InviteFriendsPage />;
+      case 'support':
+        return <SupportPage />;
       case 'home':
       default:
         return (
